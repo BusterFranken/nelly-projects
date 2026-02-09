@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.admin_automator_work/
+.DS_Store
