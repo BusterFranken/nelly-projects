@@ -1,0 +1,27 @@
+{
+  "account": "nellyrosakivits@gmail.com",
+  "driveFolder": {
+    "name": "TA Admin 2026_Nelly",
+    "id": "1dCX288mxOdN_6XQ6ZIk2hqExJWIQ9vvZ"
+  },
+  "ledgerSheet": {
+    "title": "TA Admin 2026 - Ledger",
+    "spreadsheetId": "12SRYyRw9A9aGLmWB_fraDG0Cn8WEq3PB-mRnk7U1puo",
+    "tab": "Ledger"
+  },
+  "todoSheet": {
+    "spreadsheetId": "12SRYyRw9A9aGLmWB_fraDG0Cn8WEq3PB-mRnk7U1puo",
+    "tab": "TODOs"
+  },
+  "gmailLabels": {
+    "intake": "TA/Admin",
+    "processed": "TA/Admin/Processed"
+  },
+  "allowFrom": ["busterfranken@gmail.com", "busterfranken@live.nl"],
+  "company": {
+    "name": "Talos Holding B.V.",
+    "vatNumbers": ["NL0058490834", "NL860102397B01"]
+  },
+  "intakeSubjectPrefixes": []
+}
+
