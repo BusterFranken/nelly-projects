@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "admin-automator"
+version = "0.1.0"
+description = "Admin Automator: process TA/Admin Gmail messages into Drive + Sheets ledger"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "BusterFranken"}]
+dependencies = [
+  "typer>=0.12",
+  "pydantic>=2.6",
+  "pydantic-settings>=2.2",
+  "pyyaml>=6.0",
+  "google-api-python-client>=2.120.0",
+  "google-auth>=2.28.0",
+  "google-auth-oauthlib>=1.2.0",
+  "pdfplumber>=0.11.0",
+  "python-dateutil>=2.9.0.post0",
+  "reportlab>=4.0",
+]
+
+[project.optional-dependencies]
+# HTML -> PDF rendering; optional because it brings native deps.
+html = ["weasyprint>=61.0"]
+
+[project.scripts]
+admin-automator = "admin_automator.cli:app"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
